@@ -1,0 +1,26 @@
+{
+  "name": "kononovichgalina-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kononovich11/docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kononovich11/docker/issues"
+  },
+  "homepage": "https://github.com/kononovich11/docker#readme",
+  "dependencies": {
+    "@paralect/node-mongo": "^2.0.0-beta.5",
+    "joi": "^17.1.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+version: '3.6'
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:4.2
+    networks:
+      - ship
+    ports:
+      - 27017:27017
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  
+  
+  api:
+    container_name: app-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - ship
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 8082:8082
+
+networks: 
+  ship: 
